@@ -1,0 +1,30 @@
+﻿#flightshop-click-bond-parts-image {
+    margin: 2em auto;
+    display: block;
+}
+
+#flightshop-click-bond-disclaimer {
+    text-align: center;
+}
+
+.auth-distrib-col {
+    max-width: 1024px;
+    margin-top: 1em;
+}
+
+#iso-logo-clickbond-authorized {
+    width: 100%;
+    margin-bottom: 1.25em;
+}
+
+@media screen and (min-width: 1300px) {
+    .flightshop-category-image-small {
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .flightshop-category-image-small {
+        width: 18vw;
+    }
+}

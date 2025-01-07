@@ -1,0 +1,30 @@
+﻿.flightshop-product-category-link {
+    text-align: center;
+}
+
+.flightshop-product-category-margin {
+    margin-top: 2em;
+}
+
+.flightshop-product-row {
+    min-width: 700px;
+}
+
+.flightshop-product-cell {
+    padding: 0.5em 0.25em;
+    text-align: center;
+}
+
+.flightshop-category-image {
+    width: 18vw;
+    height: auto;
+}
+
+#iso-logo-products-index {
+    width: 50%;
+    min-width:200px;
+}
+
+.flightshop-category-title {
+    font-size: 1.1em;
+}
