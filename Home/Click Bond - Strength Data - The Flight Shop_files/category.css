@@ -1,0 +1,57 @@
+﻿.flightshop-product-link {
+    text-align: center;
+}
+    .flightshop-product-link:hover .flightshop-product-link-description {
+        text-decoration: none !important;
+    }
+
+.flightshop-product-image {
+    max-width: 18vw;
+    height: 10vh;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.flightshop-product-link-description {
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+    display: block;
+}
+
+.flightshop-product-link-margin-top {
+    margin-top: 2.5em;
+}
+
+#flightshop-products-most-popular-legend {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.flightshop-product-link h5 {
+    font-size: 1.1em;
+}
+
+#flightshop-sub-category-select {
+    font-size: 1em;
+    height: initial;
+}
+
+.flightshop-product-link-container {
+    width: 23%;
+    padding: 1em;
+}
+
+.flightshop-category-list {
+    width: 100%;
+    height: calc(75vh);
+    overflow-y: scroll;
+}
+
+.flightshop-category-comparison-chart-wrapper {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    display: inline-block;
+    background-color: #def;
+}
