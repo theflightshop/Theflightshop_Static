@@ -1,0 +1,774 @@
+﻿/** variables */
+:root {
+    --min-page-width: 768px;
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    min-width: var(--min-page-width);
+}
+
+#page-body-content {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Site: wrapping element */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #222;
+}
+/* View: wrapping element */
+.flightshop-page-content {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+@media screen and (max-width: 1174px) {
+    #flightshop-homepage-title {
+        font-size: 3.5em !important;
+    }
+
+    #flightshop-temperature-info {
+        font-size: 2em !important;
+    }
+
+    .flightshop-weather-info-item {
+        font-size: 1.25em !important;
+    }
+
+    #flightshop-weather-location {
+        font-size: 1.3em !important;
+    }
+
+    .flightshop-top-alert {
+        top: calc(50px + 12vw);
+    }
+}
+
+/** NAV */
+
+#flightshop-nav-wrapper {
+    background-color: #0D63A5;
+    height: 75px;
+    min-width: var(--min-page-width);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#flightshop-nav {
+    margin: 0 auto;
+}
+
+#flightshop-nav-menu {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+#flightshop-nav-menu > li {
+    height: 5em;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav > li, .navbar-nav {
+        float: left !important;
+    }
+
+    #flightshop-nav-menu {
+        display: block;
+    }
+}
+
+.flightshop-main-nav-option {
+    padding-top: 1.25em !important;
+    padding-bottom: 1.6em !important;
+    color: #eee;
+    font-size: 1.25em;
+}
+
+.flightshop-sub-nav-option {
+    color: #444;
+    font-size: 1.25em;
+    display: block;
+    margin: 0.25em 0.5em;
+    white-space: nowrap;
+}
+
+#flightshop-temp-contact-link-container {
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#flightshop-temp-contact-link {
+    color: #eee;
+    font-size: 1.25em;
+}
+
+.flightshop-cart-nav-option {
+    padding-bottom: 1.4em !important;
+}
+.flightshop-cart-nav-option img {
+    width: 2.5em;
+}
+.flightshop-cart-items-count {
+    border-radius: 50%;
+    width: 5em;
+    height: 1em;
+    padding: 0.25em 0;
+    background: #ddd;
+    border: 2px solid #444;
+    color: #333;
+    text-align: center;
+    font: 1em Arial, sans-serif;
+    z-index: 1000;
+    position: relative;
+    left: -0.5em;
+    top: 1em;
+    font-weight: bold;
+}
+
+#flightshop-cart-link {
+    padding-top: 10px;
+}
+#flightshop-cart-link:hover {
+    text-decoration: none;
+}
+
+.flightshop-nav-caret {
+    margin-left: 0.5em;
+}
+
+#flightshop-logo {
+    height: 2.5em;
+}
+
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px !important;
+    }
+
+.navbar-right {
+    float: right !important;
+}
+
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
+    display: none !important;
+    content: " ";
+}
+
+#flightshop-search-container {
+    display: inline-block;
+    width: 50%;
+    padding-left: 2em;
+    margin-top: 10px;
+}
+    #flightshop-search-container input {
+        width: 80%;
+    }
+    #flightshop-search-container button {
+        border-radius: 0 5px 5px 0;
+    }
+
+#flightshop-search-button-image {
+    width: 15px;
+}
+
+#flightshop-home-link {
+    margin-top: -5px;
+}
+
+#flightshop-center-sub-menu {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    padding-right: 5em;
+    padding-top: 5px;
+}
+
+.flightshop-center-sub-menu-option {
+    color: #ddd;
+}
+    .flightshop-center-sub-menu-option:hover {
+        color: #ddd;
+    }
+
+.flightshop-center-sub-menu-option-divider {
+    color: #aaa;
+}
+
+.flightshop-dropdown-menu {
+    right: 0;
+    left: initial !important;
+}
+
+/** END NAV */
+
+/** other site-wide styling */
+
+.flightshop-page-header-subtext {
+    padding-left: 0.5em;
+}
+
+.flightshop-info-page-centered-image {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.flightshop-centered-image-with-title {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.flightshop-faux-link {
+    cursor: pointer;
+}
+
+.flightshop-info-table {
+    border: 1px solid #ddd;
+}
+
+/** footer */
+#flightshop-footer {
+    clear: both;
+    padding-top: 1em;
+}
+#flightshop-footer p {
+    text-align: center;
+}
+
+/** homepage landing area stuff */
+
+#flightshop-homepage-background {
+    width: 100%;
+}
+
+#flightshop-homepage-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 5vw;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    color: #333;
+    background-color: rgba(245,245,245,0.75);
+    padding: 10px;
+    text-align: center;
+    width: 50vw;
+}
+#flightshop-homepage-logo {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#flightshop-homepage-subtitle {
+    font-size: 35%;
+    display: block;
+}
+#flightshop-announce-product {
+    position: relative;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+    font-size: 1.5vw; 
+    background-color: rgba(50, 50, 50, 0.65); 
+    color: #eee;
+    padding: 1em;
+}
+#flightshop-announce {
+    position: absolute;
+    text-align: center;
+    top: 1100px;
+    width: 40%;
+    font-size: 1.5vw;
+    background-color: rgba(50, 50, 50, 0.65);
+    color: #eee;
+    padding: 1em;
+}
+
+#flightshop-announce-cart {
+    position: absolute;
+    text-align: center;
+    top: 550px;
+    width: 24%;
+    font-size: 1.0vw;
+    background-color: rgba(50, 50, 50, 0.65);
+    color: #eee;
+    padding: 1em;
+}
+
+#flightshop-weather-info {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background-color: rgba(50, 50, 50, 0.65);
+    padding: 1em;
+}
+
+.flightshop-weather-item {
+    text-align: center;
+    color: #eee;
+}
+
+#flightshop-temperature-info {
+    font-size: 2.5vw;
+}
+
+.flightshop-weather-info-item {
+    font-size: 1.5vw;
+}
+
+#flightshop-weather-location {
+    font-size: 1vw;
+}
+
+.flightshop-dynamic-text-size {
+    font-size: 1.25vw;
+}
+
+#flightshop-weather-last-updated {
+    font-size: 0.9vw;
+    color: #ddd;
+    text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .flightshop-dynamic-text-size {
+        font-size: 1.25em !important;
+    }
+
+    #flightshop-weather-last-updated {
+        font-size: 1em !important;
+    }
+}
+
+.flightshop-left-sub-menu-option {
+    color: #eee;
+    text-decoration: none;
+}
+
+#flightshop-left-sub-menu {
+    float: left;
+    font-size: 1.25vw;
+    width: 25%;
+    margin-top: 0.5vw;
+}
+
+@media screen and (min-width: 1700px) {
+    #flightshop-left-sub-menu {
+        display: block !important;
+    }
+
+    #flightshop-center-sub-menu {
+        display: none !important;
+    }
+
+    #flightshop-search-container input {
+        font-size: 1vw;
+        height: 2vw;
+    }
+
+    #flightshop-search-container button {
+        height: 2vw;
+    }
+
+    #flightshop-search-button-image {
+        width: 1vw;
+    }
+
+    #flightshop-nav-menu {
+        /* todo: enable this once center menu is implemented -- margin-top: -2.6vw; */
+        font-size: 0.85vw;
+    }
+
+    .flightshop-dropdown-menu {
+        margin-top: -0.65em !important;
+    }
+
+    #flightshop-nav {
+        width: 90%;
+    }
+
+    #flightshop-logo-container {
+        float: left;
+        margin-right: 1vw;
+    }
+}
+
+#flightshop-added-to-cart-overlay {
+    position: fixed;
+    top: 100px;
+    border: 2px solid #ddd;
+    border-radius: 1px;
+    padding: 1em;
+    background-color: #efefff;
+    min-width: 20em;
+}
+
+#flightshop-added-to-cart-close {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#flightshop-product-added-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.flightshop-product-added-item-container {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 0.25em;
+}
+
+.flightshop-product-added-item {
+
+}
+
+.flightshop-product-added-price {
+    float: right;
+}
+
+.flightshop-product-added-arrow {
+    border-left: 21px solid transparent;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 80px;
+    left: 90%;
+}
+
+#flightshop-added-to-cart-overlay {
+    left: 70%;
+}
+
+@media screen and (max-width: 1699px) {
+    #flightshop-added-to-cart-overlay {
+        left: 60% !important;
+    }
+
+    .flightshop-product-added-arrow {
+        left: 80% !important;
+    }
+}
+
+.flightshop-top-alert {
+    position: absolute;
+    top: calc(50px + 15vw);
+    left: 1em;
+    z-index: 1000;
+}
+
+#flightshop-quick-search-results-list {
+    display: inline-block;
+    width: 43%;
+    padding-left: 2em;
+    position: relative;
+}
+@media screen and (min-width: 1750px) {
+    #flightshop-quick-search-results-list {
+        left: 17em !important;
+    }
+}
+
+.flightshop-quick-search-li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.flightshop-quick-search-content {
+    height: 100%;
+    margin: 0;
+}
+    .flightshop-quick-search-content:hover {
+        background-color: #efefef;
+    }
+
+.flightshop-quick-search-link {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.flightshop-quick-search-pt-nr {
+    color: #222;
+}
+
+.flightshop-quick-search-desc {
+    padding-left: 0.5em;
+    color: #666;
+}
+
+.flightshop-quick-search-right-arrow {
+    float: right;
+    padding-right: 1em;
+    color: #666;
+}
+
+#flightshop-quick-search-no-results {
+    display: block;
+    position: relative;
+    left: 18em;
+    background-color: white;
+    top: -20px;
+    width: 41%;
+    padding: 1em;
+    border: 1px solid rgb(239, 239, 239);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1700px) {
+    #flightshop-quick-search-no-results {
+        left: 19em !important;
+    }
+}
+
+#flightshop-scroll-to-see-more {
+    position: relative;
+    bottom: 5vw;
+    left: 0;
+    margin-left: 3vw;
+    padding: 0.5em;
+    display: inline-block;
+    color: #efefef;
+    font-size: 2em;
+    background-color: rgba(50, 50, 50, 0.65);
+}
+
+#flightshop-about-us-link {
+    cursor: pointer;
+}
+#flightshop-about-us-link:hover {
+    text-decoration: underline;
+}
+
+        #flightshop-home-carousel .item {
+            height: 100% !important;
+        }
+        #flightshop-home-carousel {
+            #height: 90vh;
+            height: 20vh;
+        }
+            #flightshop-home-carousel .carousel-inner {
+        height: 100%;
+    }
+        .flightshop-carousel-img {
+            height: 100% !important;
+            #height: 50% !important;
+        }
+
+#flightshop-click-bond-home-link {
+    position: relative;
+    right: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+    #flightshop-click-bond-home-link a:hover {
+        text-decoration-color: #eee;
+    }
+
+#flightshop-click-bond-home-img {
+    width: 10vw;
+    max-width: 250px;
+    background-color: #efefef;
+    padding: 10px;
+}
+
+#flightshop-click-bond-link-text {
+    color: #000;
+    font-size: 1.5em;
+}
+
+#flightshop-click-bond-link-subtitle {
+    color: #000;
+    font-size: 1.25em;
+}
+
+#main-menu-hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: 45px;
+    background-image: url(/images/hamburger.png);
+    background-size: contain;
+    background-color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#flightshop-expand-menu {
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    background-color: #efefef;
+    /*list-style: none;*/
+    padding: 0.75em;
+    padding-top: 0.5em;
+}
+    #flightshop-expand-menu a {
+        border-bottom: 1px solid #cfcfcf;
+        padding: 0.25em 0.5em;
+        /*cursor: pointer;*/
+        font-size: 1.2em;
+    }
+    #flightshop-expand-menu a:hover {
+        background-color: #dfdfdf;
+    }
+
+    /*hamburger menu*/
+.dropbtn {
+    background-color: transparent;
+    background-image: url('/images/hamburger.png');
+    background-size: contain;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 55px;
+    height: 100%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.hamburger {
+    position: absolute;
+    right: 95px;
+    top: 10px;
+    bottom: 10px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    width: 50vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 3px;
+        text-decoration: none;
+        display: block;
+    }
+
+.hamberders-submenu {
+    float: right;
+    width: 24vw;
+}
+
+.hamburger a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#flightshop-cart-icon-container {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.hamburger-sec-title {
+    display: inline-block;
+    width: 95%;
+    margin-left: 2.5%;
+    border-bottom: 1px solid #cacaca;
+    font-size: 1.1em;
+    color: #5f5f5f;
+    padding: 0.25em 0.5em;
+}
+
+@media screen and (min-width: 1100px) {
+    #flightshop-nav-menu {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 1099px) {
+    #flightshop-nav-hamberders {
+        display: block !important;
+    }
+}
+
+.flightshop-quick-search-loader {
+    display: inline-block;
+    border: 3px solid #cdcdcd;
+    border-top: 3px solid #5555ff;
+    border-radius: 50%;
+    width: 1.75em;
+    height: 1.75em;
+    animation: spin 1.25s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.flightshop-quick-search-loader-text {
+    position: relative;
+    top: -0.2em;
+    left: 0.4em;
+    font-size: 1.3em;
+}
+
+.flightshop-quick-search-loading-container {
+    padding: 0.75em 1em;
+}
+
+/** change home page logo image based on screen size so logo doesn't cover hangar image */
+#flightshop-homepage-logo {
+    background-image: url('/images/the-flight-shop.png');
+    height: 10vw;
+    margin-bottom: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: 1300px) {
+    #flightshop-homepage-logo {
+        background-image: url('/images/the-flight-shop-wide.png');
+        height: 5vw;
+    }
+}
+
+.iso-certificate-link-container {
+    margin-top: 1em;
+    background-color: #def;
+    width: 50%;
+    margin: 1em auto 0 auto;
+    padding: 0.5em;
+    text-decoration: underline;
+    text-align: center;
+}
