@@ -1,0 +1,165 @@
+﻿#flightshop-product-detail-image {
+    min-width: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#flightshop-product-detail-title {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+#flightshop-product-detail-subtitle {
+    font-size: 1.25em;
+    color: #777;
+}
+
+#flightshop-product-detail-description {
+    color: #333;
+}
+
+#flightshop-product-detail-external-links {
+    margin-top: 0.5em;
+}
+
+.flightshop-product-detail-download-link {
+    float: right;
+}
+
+.flightshop-product-detail-links-separator {
+    margin: 0.5em 0;
+}
+
+/* NOTE: this is for use with old-school FLight Shop images. 
+    new images from Clickbond website scale better and should fill the available space.
+    thus, download text and links look better floating left/right
+*/
+#flightshop-product-detail-OG-download-section {
+    text-align: center;
+}
+
+#flightshop-installation-examples {
+    position: relative;
+    top: 1em;
+    margin-bottom: 1em;
+}
+
+#flightshop-installation-examples-header {
+    clear: both;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    margin-top: 1em;
+}
+
+#flightshop-installation-examples-title {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#flightshop-installation-examples-header-close-button {
+    border: none;
+    float: right;
+    padding: 0;
+}
+    #flightshop-installation-examples-header-close-button > span {
+        font-size: 1.5em;
+        font-weight: bold;
+        position: relative;
+        top: -4px;
+    }
+
+#flightshop-installation-examples-image-container {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 1em;
+}
+
+.flightshop-installation-example-image {
+    max-height: 200px;
+    margin-right: 0.75em;
+}
+
+#flightshop-product-detail-parts-section {
+    clear: both;
+    position: relative;
+    top: 1.5em;
+}
+
+.flightshop-parts-table-column-short {
+    width: 15%;
+}
+
+.flightshop-parts-table-column-long {
+    width: 30%;
+}
+
+.flightshop-parts-table-cell {
+    border: 2px solid #ddd;
+    padding: 0.25em;
+}
+
+.flightshop-part-add-to-cart-input {
+    width: 30%;
+}
+
+#flightshop-button-add-special-part {
+    margin: 0.5em 0;
+    color: #555 !important;
+    font-size: 1em;
+}
+
+#flightshop-parts-table {
+    width: 100%;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 1700px) {
+    #flightshop-parts-table {
+        font-size: 1vw !important;
+    }
+
+    #flightshop-button-add-special-part {
+        font-size: 1vw !important;
+    }
+}
+
+#flightshop-invalid-unlisted-part-alert {
+    margin-top: 0.25em;
+}
+
+#flightshop-invalid-part-quantity {
+    margin-top: 0.25em;
+}
+
+/* z-index of -1 was added to keep elements from appearing over search results dropdown (in nav) */
+.flightshop-product-detail-overview {
+    /*z-index: -1;*/
+}
+.flightshop-product-detail-content {
+    /*z-index: -1;*/
+}
+
+.flightshop-no-product-img-available-container {
+    min-height: 100px;
+    height: 10em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.flightshop-no-product-img-available {
+    background-image: url(/images/index/click-bond.jpg);
+    background-size: contain;
+    opacity: 0.2;
+    height: 100%;
+}
+
+.flightshop-no-product-img-available-text {
+    font-size: 1.1em;
+    font-style: italic;
+    position: relative;
+    top: -2.5em;
+    color: #222;
+}
+
