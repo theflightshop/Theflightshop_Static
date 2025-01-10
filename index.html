@@ -257,20 +257,10 @@
     var navSubMenu = document.getElementById('flightshop-center-sub-menu');
 
     var ignoreCurrentModal = function () {
-        window.localStorage.setItem('ignoredModalMessage', 'Holiday Closure! &#xA;We will be closed for the Holidays from Dec. 22, 2023 to Jan. 2, 2024. &#xA;No online orders will be processed until we return. &#xA;We are thankful for our customers and wish you a safe and Happy Holiday Season.');
+        window.localStorage.setItem('ignoredModalMessage', '');
     };
 
-    window.addEventListener('load', function () {
-        if ('False'.toLowerCase() == 'true') {
-            var alertId = 'False'.toLowerCase() == 'true' ? 'flightshop-order-err-alert' : 'flightshop-order-success-alert';
-            $('#' + alertId).show(750);
-        }
-        else if ('False'.toLowerCase() == 'false' && window.localStorage.getItem('ignoredModalMessage') != 'Holiday Closure! &#xA;We will be closed for the Holidays from Dec. 22, 2023 to Jan. 2, 2024. &#xA;No online orders will be processed until we return. &#xA;We are thankful for our customers and wish you a safe and Happy Holiday Season.') {
-            document.getElementById('flightshop-homepage-message').innerHTML = 'Holiday Closure! &#xA;We will be closed for the Holidays from Dec. 22, 2023 to Jan. 2, 2024. &#xA;No online orders will be processed until we return. &#xA;We are thankful for our customers and wish you a safe and Happy Holiday Season.';
-            $('#flightshop-homepage-message-alert').modal();
-        }
-
-        getCurrentWeatherInfo();
+    
     });</script>
 <div>
     <div id="flightshop-order-success-alert" class="alert alert-success flightshop-top-alert" role="alert" style="display: none;">
