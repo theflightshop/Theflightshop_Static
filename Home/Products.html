@@ -343,7 +343,7 @@
                 ©
                 <!--2019 -->
                 <script>document.write(new Date().getFullYear())</script>2024
-                - TheFlightShop&nbsp;|&nbsp;<a href="./Home/Terms">Terms</a>&nbsp;|&nbsp;<a href="./Contact">Contact Us</a>
+                - TheFlightShop&nbsp;|&nbsp;<a href="./Theflightshop_Static/Home/Terms">Terms</a>&nbsp;|&nbsp;<a href="./Contact">Contact Us</a>
             </p>
         </footer>
         <!-- Replaced copyright with dynamic year
@@ -417,7 +417,7 @@
     // call web server
     function fetchWeatherInfo(callback) {
         $.ajax({
-            url: '/Home/CurrentWeatherInfo',
+            url: '/Theflightshop_Static/Home/CurrentWeatherInfo',
             type: 'GET',
             success: function(weatherInfo) {
                 callback(weatherInfo);
@@ -508,7 +508,7 @@
                 function userSearchEnter() {
                     var query = document.getElementById('user-search-val').value;
                     if (query) {
-                        var searchUrl = encodeURI('/Home/SearchResults' + '?q=' + query);
+                        var searchUrl = encodeURI('/Theflightshop_Static/Home/SearchResults' + '?q=' + query);
                         queuedQuery = null;
                         location.href = searchUrl;
                     }
@@ -590,7 +590,7 @@
                 function beginListenForQueries() {
                     setInterval(function () {
                         if (queuedQuery) {
-                            var searchUrl = encodeURI('/Home/Search' + '?q=' + queuedQuery);
+                            var searchUrl = encodeURI('/Theflightshop_Static/Home/Search' + '?q=' + queuedQuery);
                             lastQuery = queuedQuery;
                             queuedQuery = null;
                             $.get(searchUrl)
