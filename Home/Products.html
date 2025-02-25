@@ -359,7 +359,7 @@
             <div id="flightshop-product-added-items">
             </div>
             <p>
-                <a href="/Theflightshop_Static//indexCart">View Cart</a>
+                <a href="//indexCart">View Cart</a>
             </p>
         </div>
     </div>
@@ -417,7 +417,7 @@
     // call web server
     function fetchWeatherInfo(callback) {
         $.ajax({
-            url: '/Theflightshop_Static/Home/CurrentWeatherInfo',
+            url: '/Home/CurrentWeatherInfo',
             type: 'GET',
             success: function(weatherInfo) {
                 callback(weatherInfo);
@@ -508,7 +508,7 @@
                 function userSearchEnter() {
                     var query = document.getElementById('user-search-val').value;
                     if (query) {
-                        var searchUrl = encodeURI('/Theflightshop_Static/Home/SearchResults' + '?q=' + query);
+                        var searchUrl = encodeURI('/Home/SearchResults' + '?q=' + query);
                         queuedQuery = null;
                         location.href = searchUrl;
                     }
@@ -590,7 +590,7 @@
                 function beginListenForQueries() {
                     setInterval(function () {
                         if (queuedQuery) {
-                            var searchUrl = encodeURI('/Theflightshop_Static/Home/Search' + '?q=' + queuedQuery);
+                            var searchUrl = encodeURI('/Home/Search' + '?q=' + queuedQuery);
                             lastQuery = queuedQuery;
                             queuedQuery = null;
                             $.get(searchUrl)
